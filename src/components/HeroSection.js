@@ -8,21 +8,21 @@ function HeroSection() {
     return (
         <div className='hero-container'>
             <video src="/videos/video-3.mp4" autoPlay loop muted/>
-            <h1>{'S\u00D8REN T\u00D8NNESEN'}</h1>
+            <h1>{'S\u00D8 D\u00D8'}</h1>
             <p>A page out of my book</p>
             <p>I'm{' '}
                 <Typical loop={Infinity} wrapper="b" steps={[
-                    'a developer',
+                    'a abc',//developer',
                     1000,
-                    'a musician',
+                    'a def',//musician',
                     1000,
-                    'a health enthusiast',
+                    'a ghi',//health enthusiast',
                     1000,
-                    'a traveller',
+                    'a jkl',//traveller',
                     1000,
-                    'a student',
+                    'a mno',//student',
                     1000,
-                    'an epistemophile',
+                    'an pqr',//epistemophile',
                     5000
                 ]} />
             </p>

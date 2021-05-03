@@ -1,4 +1,4 @@
-/*import React from 'react';
+import React from 'react';
 import './Button.css';
 import { Link } from 'react-router-dom';
 
@@ -16,4 +16,3 @@ const Button = ({children, type, onClick, buttonStyle, buttonSize, linkto}) => {
     )
 }
 export default Button
-*/

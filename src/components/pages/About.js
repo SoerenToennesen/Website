@@ -1,4 +1,4 @@
-/*import React from 'react';
+import React from 'react';
 import '../../App.css';
 import CalendarHeatMap from '../CalendarHeatMap';
 import AboutMe from '../AboutMe';
@@ -13,9 +13,5 @@ export default function About() {
             <CalendarHeatMap />
             <Footer />
         </>
-        <div> //COMMENT THIS PART OUT!
-            <AboutMe />
-            
-        </div>
     )
-}*/
+}

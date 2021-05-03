@@ -12,7 +12,11 @@ import ContactMe from './components/pages/ContactMe'
 
 function App() {
   return (
-    <>
+    <div>
+      <div>Under development</div>
+    </div>  );
+}
+    {/*<>
     <Router>
       <Navbar />
       <Switch>
@@ -22,8 +26,7 @@ function App() {
         <Route path="/contact-me" component={ContactMe} />
       </Switch>
     </Router>
-    </>
-  );
-}
+    </>*/}
+
 
 export default App;

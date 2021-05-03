@@ -5,7 +5,7 @@ import './Footer.css';
 
 function Footer() {
     return (
-        <div className="foot-container" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+        <div className="foot-container" style={{ backgroundColor: 'rgba(0, 0, 0, 0.85)' }}>
             <section className="footer-subscription">
                 <p className="footer-subscription-heading">
                     {/*Send a copy of my resumé*/}Email below :)
@@ -23,8 +23,8 @@ function Footer() {
             <div className="footer-links">
                 <div className='footer-link-wrapper'>
                     <div class='footer-link-items'>
-                        <h2>About Us</h2>
-                        <Link to='/sign-up'>How it works</Link>
+                        <h2>A 'lil something something</h2>
+                        <Link to='/contact-me'>Contact me</Link>
                         <Link to='/'>Testimonials</Link>
                         <Link to='/'>Careers</Link>
                         <Link to='/'>Investors</Link>

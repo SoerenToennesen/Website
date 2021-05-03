@@ -9,9 +9,8 @@ function Home () {
     return(
         <>
             <HeroSection />
-            <Cards />
-            <Tester123 />
-            <Footer />
+            {/*<Cards />
+            <Footer />*/}
         </>
     )
 }

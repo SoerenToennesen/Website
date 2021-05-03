@@ -1,5 +1,6 @@
 import React from 'react';
 import CalendarHeatmap from 'reactjs-calendar-heatmap';
+import './CalendarHeatMap.css';
 
 function CalendarHeatMap() {
 
@@ -39,8 +40,7 @@ function CalendarHeatMap() {
 
     return (
         <div>
-            <p>Test</p>
-            <div>
+            <div className="calendarheatmap">
                 <CalendarHeatmap
                     data={data}
                     //color={color}

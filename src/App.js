@@ -13,17 +13,17 @@ import ContactMe from './components/pages/ContactMe'
 function App() {
   return (
     <>
-    <Router>
-      <Navbar />
-      <Switch>
-        <Route path='/' exact component={Home} />
-        <Route path="/projects" component={Projects} />
-        <Route path="/about" component={About} />
-        <Route path="/contact-me" component={ContactMe} />
-      </Switch>
-    </Router>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path='/' exact component={Home} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/about" component={About} />
+          <Route path="/contact-me" component={ContactMe} />
+        </Switch>
+      </Router>
     </>
-  );
+    );
 }
 
 export default App;

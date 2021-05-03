@@ -8,9 +8,9 @@ function Footer() {
         <div className="foot-container" style={{ backgroundColor: 'rgba(0, 0, 0, 0.85)' }}>
             <section className="footer-subscription">
                 <p className="footer-subscription-heading">
-                    {/*Send a copy of my resumé*/}Email below :)
+                    {/*Send a copy of my resumé*/}Email below :) //COMMENT THIS PART OUT!!
                 </p>
-                {/*<p className="footer-subscription-text">
+                {/*<p className="footer-subscription-text"> //COMMENT THIS PART OUT!!
                     You can unsubscribe at any time
                 </p>*/}
                 <div className="input-areas">

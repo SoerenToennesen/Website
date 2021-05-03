@@ -13,9 +13,5 @@ export default function About() {
             <CalendarHeatMap />
             <Footer />
         </>
-        /*<div>
-            <AboutMe />
-            
-        </div>*/
     )
 }

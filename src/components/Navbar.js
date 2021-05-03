@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+/*import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import Button from './Button'
 import './Navbar.css';
@@ -65,3 +65,4 @@ function Navbar() {
 }
 
 export default Navbar
+*/

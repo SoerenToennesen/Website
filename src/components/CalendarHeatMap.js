@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import CalendarHeatmap from 'reactjs-calendar-heatmap';
 import './CalendarHeatMap.css';
 
@@ -50,4 +50,4 @@ function CalendarHeatMap() {
         </div>
     )
 };
-export default CalendarHeatMap
+export default CalendarHeatMap*/

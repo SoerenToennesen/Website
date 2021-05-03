@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import '../App.css';
 import Button from './Button';
 import './HeroSection.css';
@@ -20,3 +20,4 @@ function AboutMe() {
 }
 
 export default AboutMe
+*/

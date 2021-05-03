@@ -1,14 +1,14 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+//import Navbar from './components/Navbar';
+//import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
 
-import './App.css';
-import Home from './components/pages/Home'
-import Projects from './components/pages/Projects'
-import About from './components/pages/About'
-import ContactMe from './components/pages/ContactMe'
+//import './App.css';
+//import Home from './components/pages/Home'
+//import Projects from './components/pages/Projects'
+//import About from './components/pages/About'
+//import ContactMe from './components/pages/ContactMe'
 
 function App() {
   return (

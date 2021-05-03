@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+/*import React, { useState } from 'react';
 import ReactMapGL, { Marker } from 'react-map-gl';
 
 
@@ -36,4 +36,4 @@ function Tester123() {
 		</div>
 	)
 }
-export default Tester123
+export default Tester123*/

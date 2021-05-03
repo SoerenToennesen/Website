@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import { Link } from 'react-router-dom';
 import Button from './Button';
 import './Footer.css';
@@ -8,11 +8,11 @@ function Footer() {
         <div className="foot-container" style={{ backgroundColor: 'rgba(0, 0, 0, 0.85)' }}>
             <section className="footer-subscription">
                 <p className="footer-subscription-heading">
-                    {/*Send a copy of my resumé*/}Email below :)
+                    {Send a copy of my resumé}Email below :) //COMMENT THIS PART OUT!!
                 </p>
-                {/*<p className="footer-subscription-text">
+                {<p className="footer-subscription-text"> //COMMENT THIS PART OUT!!
                     You can unsubscribe at any time
-                </p>*/}
+                </p>}
                 <div className="input-areas">
                     <form>
                         <input type="email" name="email" placeholder="Your Email" className="footer-input" />
@@ -112,3 +112,4 @@ function Footer() {
 }
 
 export default Footer
+*/

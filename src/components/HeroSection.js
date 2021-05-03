@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import '../App.css';
 import Button from './Button';
 import './HeroSection.css';
@@ -7,7 +7,7 @@ import Typical from 'react-typical';
 function HeroSection() {
     return (
         <div className='hero-container'>
-            {/*<video src="/videos/video-3.mp4" autoPlay loop muted/>*/}
+            {<video src="/videos/video-3.mp4" autoPlay loop muted/>} //!! COMMENT THIS PART OUT
             <h1>{'S\u00F8ren T\u00F8nnesen'}</h1>
             <p>I'm{' '}
                 <Typical loop={Infinity} wrapper="b" steps={[
@@ -34,3 +34,4 @@ function HeroSection() {
 }
 
 export default HeroSection
+*/

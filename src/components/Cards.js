@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import CardItems from './CardItems';
 import './Cards.css';
 
@@ -49,3 +49,4 @@ function Cards() {
 }
 
 export default Cards
+*/

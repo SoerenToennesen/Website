@@ -11,15 +11,15 @@ function HeroSection() {
             <h1>{'S\u00F8ren T\u00F8nnesen'}</h1>
             <p>I'm{' '}
                 <Typical loop={Infinity} wrapper="b" steps={[
-                    'a developer',//developer',
+                    'a developer',
                     1000,
-                    'a musician',//musician',
+                    'a musician',
                     1000,
-                    'a golfer',//health enthusiast',
+                    'a golfer',
                     1000,
-                    'a student',//student',
+                    'a student',
                     1000,
-                    'an epistemophile',//epistemophile',
+                    'an epistemophile',
                     5000
                 ]} />
             </p>

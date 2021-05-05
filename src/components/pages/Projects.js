@@ -2,30 +2,18 @@ import React from 'react';
 import '../../App.css';
 import Cards from '../Cards';
 import Typical from 'react-typical';
-import HeroSectionProjects from '../HeroSectionProjects';
+import FooterShort from '../FooterShort';
 
 export default function Projects() {
     return (
         <>
-            <HeroSectionProjects />
-            {/*<h1 className='projects'>Projects</h1>
-            <p>I'm{' '}
-                <Typical loop={Infinity} wrapper="b" steps={[
-                    'a developer',//developer',
-                    1000,
-                    'a musician',//musician',
-                    1000,
-                    'a health enthusiast',//health enthusiast',
-                    1000,
-                    'a traveller',//traveller',
-                    1000,
-                    'a student',//student',
-                    1000,
-                    'an epistemophile',//epistemophile',
-                    5000
-                ]} />
-            </p>
-            <Cards />*/}
+            <div className='hero-container-projects'>
+                {/*<video src="/videos/video-3.mp4" autoPlay loop muted/>*/}
+                <h1>Projects</h1>
+                <p>"The question of whether computers can think is like the question whether submarines can swim."</p>
+            </div>
+            <Cards />
+            <FooterShort />
         </>
     );
 }

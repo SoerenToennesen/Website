@@ -11,8 +11,6 @@ function Home () {
         <>
             <HeroSection />
             <FooterShort />
-            {/*<Cards />
-            <Footer />*/}
         </>
     )
 }

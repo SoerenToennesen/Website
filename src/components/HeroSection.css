@@ -31,6 +31,36 @@ video {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.hero-container-projects {
+    background: url('../assets/images/codingprojectsimg.jpg') center center/cover no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
+    object-fit: contain;
+}
+
+.hero-container-projects > h1 {
+    color: #fff;
+    margin-top: 0px;
+    line-height: 450px;
+    font-size: 100px;
+}
+
+.hero-container-projects > p {
+    margin-top: -125px;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 .hero-btn {
     margin-top: 32px;
 }

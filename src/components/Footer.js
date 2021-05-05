@@ -5,12 +5,12 @@ import './Footer.css';
 
 function Footer() {
     return (
-        <div className="foot-container" style={{ backgroundColor: 'rgba(0, 0, 0, 0.85)' }}>
+        <div className="foot-container" style={{ backgroundColor: 'rgba(0, 0, 0, 1)' }}>
             <section className="footer-subscription">
                 <p className="footer-subscription-heading">
-                    {/*Send a copy of my resumé*/}Email below :) //COMMENT THIS PART OUT!!
+                    {/*Send a copy of my resumé*/}Email below :)
                 </p>
-                {/*<p className="footer-subscription-text"> //COMMENT THIS PART OUT!!
+                {/*<p className="footer-subscription-text">
                     You can unsubscribe at any time
                 </p>*/}
                 <div className="input-areas">

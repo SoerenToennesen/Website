@@ -112,6 +112,14 @@
     max-width: 3000px;
     margin: 40px auto 0 auto;
   }
+  .social-media-wrap-short {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 3000px;
+    margin: -35px auto 0 auto;
+  }
   
   .social-icons {
     display: flex;

@@ -15,9 +15,7 @@ function HeroSection() {
                     1000,
                     'a musician',//musician',
                     1000,
-                    'a health enthusiast',//health enthusiast',
-                    1000,
-                    'a traveller',//traveller',
+                    'a golfer',//health enthusiast',
                     1000,
                     'a student',//student',
                     1000,
@@ -25,10 +23,10 @@ function HeroSection() {
                     5000
                 ]} />
             </p>
-            <div className="hero-btns">
+            {/*<div className="hero-btns">
                 <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--large' linkto='projects'>PROJECTS</Button>
                 <Button className='btns' buttonStyle='btn--primary' buttonSize='btn--large'>GET TO KNOW ME BETTER<i className='far fa-play-circle' /></Button>
-            </div>
+            </div>*/}
         </div>
     )
 }

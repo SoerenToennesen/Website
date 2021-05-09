@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Button from './Button';
 //import fileDownloader from './fileDownloader';
@@ -9,6 +9,9 @@ import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 
 function FooterAbout() {
+
+    const [tippyContent, setTippyContent] = useState("sorentoennesen@gmail.com");
+
     function downloadCV(e) {
         e.preventDefault();
         console.log("Downloading CV...")
@@ -17,11 +20,10 @@ function FooterAbout() {
     function alertNotImplemented(e) {
         alert('Not yet implemented. If you click send, you can view my CV.')
     }
-    function alertPersonalInfo(e, personalInfo) {
-        e.preventDefault();
-        navigator.clipboard.writeText(personalInfo);
-        //alert(personalInfo)
+    function resetTippy() {
+        setTippyContent("sorentoennesen@gmail.com")
     }
+
 
     return (
         
@@ -48,7 +50,7 @@ function FooterAbout() {
                         >
                             <i className='fab fa-github' />
                         </Link>
-                        <Tippy content={"29 17 99 60"}>
+                        <Tippy content={"29 17 99 60"} hideOnClick={false}>
                         <Link
                             className='social-icon-link-noclick phone'
                             aria-label='Phone'
@@ -56,15 +58,19 @@ function FooterAbout() {
                             <i className='fas fa-phone'/>
                         </Link>
                         </Tippy>
-                        <Tippy content={"sorentoennesen@gmail.com (click to copy)"}>
+                        <Tippy content={tippyContent} hideOnClick={false}>
                         <Link
                             className='social-icon-link email'
                             aria-label='Youtube'
+                            onMouseLeave={() => resetTippy()}
                         >
-                            <span onClick={(e) => alertPersonalInfo(e, "sorentoennesen@gmail.com")}><i className='fas fa-envelope' /></span>
+                            <span onClick={() => {
+                                setTippyContent("Copied to clipboard!");
+                                navigator.clipboard.writeText("sorentoennesen@gmail.com");
+                            }}><i className='fas fa-envelope' /></span>
                         </Link>
                         </Tippy>
-                        <Tippy content={"Copenhagen, Denmark"}>
+                        <Tippy content={"Copenhagen, Denmark"} hideOnClick={false}>
                         <Link
                             className='social-icon-link-noclick location'
                             aria-label='Location'

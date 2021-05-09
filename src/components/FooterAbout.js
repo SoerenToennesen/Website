@@ -1,20 +1,39 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Button from './Button';
+//import fileDownloader from './fileDownloader';
 import './FooterAbout.css';
+//import jsPDF from 'jspdf';
+import pdf from '../assets/CV_SørenTønnesen.pdf';
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
 
 function FooterAbout() {
+    function downloadCV(e) {
+        e.preventDefault();
+        console.log("Downloading CV...")
+        window.open(pdf);
+    }
+    function alertNotImplemented(e) {
+        alert('Not yet implemented. If you click send, you can view my CV.')
+    }
+    function alertPersonalInfo(e, personalInfo) {
+        e.preventDefault();
+        navigator.clipboard.writeText(personalInfo);
+        //alert(personalInfo)
+    }
+
     return (
+        
+
         <div style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
             <section className="footer-subscription">
                 <p className="footer-subscription-heading">
                     Send a copy of my resumé
                 </p>
-                <div className="input-areas">
-                    <form>
-                        <input type="email" name="email" placeholder="Your Email <not implemented yet>" className="footer-input" />
-                        <Button buttonStyle='btn--outline' linkto='about'>Send CV</Button>
-                    </form>
+                <div className="input-areas-custom">
+                        <input type="email" name="email" placeholder="Your email" className="footer-input" onClick={(e) => alertNotImplemented(e)}/>
+                        <Button buttonStyle='btn--outline' onClick={(e) => downloadCV(e)}>Send</Button>
                 </div>
             </section>
             <section className="social-media">
@@ -22,44 +41,44 @@ function FooterAbout() {
                     <small className="website-rights">Portfolio © 2021</small>
                     <div className="social-icons">
                         <Link
-                            class='social-icon-link github'
-                            to='/'
+                            className='social-icon-link github'
+                            to={{pathname: "https://github.com/SoerenToennesen"}}
                             target='_blank'
                             aria-label='Github'
                         >
-                            <i class='fab fa-github' />
+                            <i className='fab fa-github' />
                         </Link>
+                        <Tippy content={"29 17 99 60"}>
                         <Link
-                            class='social-icon-link phone'
-                            to='/'
-                            target='_blank'
+                            className='social-icon-link-noclick phone'
                             aria-label='Phone'
                         >
-                            <i class='fas fa-phone'/>
+                            <i className='fas fa-phone'/>
                         </Link>
+                        </Tippy>
+                        <Tippy content={"sorentoennesen@gmail.com (click to copy)"}>
                         <Link
-                            class='social-icon-link email'
-                            to='/'
-                            target='_blank'
+                            className='social-icon-link email'
                             aria-label='Youtube'
                         >
-                            <i class='fas fa-envelope' />
+                            <span onClick={(e) => alertPersonalInfo(e, "sorentoennesen@gmail.com")}><i className='fas fa-envelope' /></span>
                         </Link>
+                        </Tippy>
+                        <Tippy content={"Copenhagen, Denmark"}>
                         <Link
-                            class='social-icon-link location'
-                            to='/'
-                            target='_blank'
+                            className='social-icon-link-noclick location'
                             aria-label='Location'
                         >
-                            <i class='fas fa-street-view' />
+                            <i className='fas fa-street-view' />
                         </Link>
+                        </Tippy>
                         <Link
-                            class='social-icon-link linkedin'
-                            to='/'
+                            className='social-icon-link linkedin'
+                            to={{pathname: "https://www.linkedin.com/in/soerentoennesen/"}}
                             target='_blank'
                             aria-label='LinkedIn'
                         >
-                            <i class='fab fa-linkedin' />
+                            <i className='fab fa-linkedin' />
                         </Link>
                     </div>
                     <small className="website-rights">Last updated 05-05-2021</small>

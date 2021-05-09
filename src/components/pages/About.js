@@ -1,7 +1,6 @@
 import React from 'react';
 import '../../App.css';
-import CalendarHeatMap from '../CalendarHeatMap';
-import Footer from '../Footer';
+//import CalendarHeatMap from '../CalendarHeatMap';
 import FooterAbout from '../FooterAbout';
 
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../App.css';
 import Cards from '../Cards';
-import Typical from 'react-typical';
+//import Typical from 'react-typical';
 import FooterShort from '../FooterShort';
 
 export default function Projects() {

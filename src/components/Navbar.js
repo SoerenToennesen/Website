@@ -11,7 +11,7 @@ function Navbar() {
     const location = useLocation();
     const handleClick = () => setClick(!click);
     function closeMobileMenu(e, curLink) {
-        if (location.pathname == curLink) e.preventDefault();
+        if (location.pathname === curLink) e.preventDefault();
         setClick(false);
     }
 

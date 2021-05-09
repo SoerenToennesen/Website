@@ -12,7 +12,7 @@ function Footer() {
                 </p>
                 <div className="input-areas">
                     <form>
-                        <input type="email" name="email" placeholder="Your Email <not implemented yet>" className="footer-input" />
+                        <input type="email" textAlign='center' name="email" placeholder="Your Email <not implemented yet>" className="footer-input" />
                         <Button buttonStyle='btn--outline' linkto='about'>Send CV</Button>
                     </form>
                 </div>
